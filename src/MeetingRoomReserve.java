@@ -55,7 +55,6 @@ public class MeetingRoomReserve {
 
     public static void main(String[] args) throws IOException {
 
-
         StringTokenizer st = new StringTokenizer(br.readLine(), " ");
 
         final int roomNums = Integer.parseInt(st.nextToken());
