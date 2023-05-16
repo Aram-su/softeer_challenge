@@ -21,10 +21,8 @@ public class SecretMenu {
         String sc = br.readLine();
         String nm = br.readLine();
 
-        if (nm.contains(sc) )
-            bw.write("secret");
-        else
-            bw.write("normal");
+        if (nm.contains(sc) ) bw.write("secret");
+        else bw.write("normal");
 
         br.close();
         bw.close();
