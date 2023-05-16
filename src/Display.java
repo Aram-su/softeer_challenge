@@ -53,9 +53,11 @@ public class Display {
                 String tmp2 = num2.substring(j,j+1);
 
                 if ( !tmp1.equals("a") && !tmp2.equals("a") ){
+
+                    if ( tmp1.equals(tmp2) ) continue;
+
                     int a = Integer.parseInt(tmp1);
                     int b = Integer.parseInt(tmp2);
-                    if ( a == b ) continue;
                     cnt += numbers[a].compareLight(numbers[b]);
                 } else if ( !tmp1.equals("a") ){
                     int a = Integer.parseInt(tmp1);
