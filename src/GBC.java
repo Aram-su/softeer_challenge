@@ -57,7 +57,7 @@ public class GBC {
             int spd = Integer.parseInt(st.nextToken());
 
             if ( i == 0 )
-                tests[i] = new Section(len, spd);
+                tests[i] = new Section(1, len, spd);
             else
                 tests[i] = new Section(tests[i - 1].end+1, tests[i - 1].end + len, spd);
         }
