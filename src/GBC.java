@@ -59,7 +59,7 @@ public class GBC {
             if ( i == 0 )
                 tests[i] = new Section(len, spd);
             else
-                tests[i] = new Section(tests[i - 1].end, tests[i - 1].end + len, spd);
+                tests[i] = new Section(tests[i - 1].end+1, tests[i - 1].end + len, spd);
         }
 
         for( int i = 0 ; i < M ;i++){ //모든 속도값을
